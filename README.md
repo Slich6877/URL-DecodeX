@@ -29,6 +29,7 @@ Run the script, choose your mode (URL string or log file), and follow the prompt
 The decoded result will be saved in the specified output file.
 
 #Important:
+
   • Use the path where the file that you want to decode is located when the input asks you:
 
 Example:
