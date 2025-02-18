@@ -24,7 +24,7 @@ def decode_url(encoded_str):
 
 # Main function to handle user interaction
 def log_decoder():
-    action = input("Press (U) for decode a URL string or Press (F) for decode a Log file? ").strip().lower()
+    action = input("Press (U) for decode a URL string or Press (L) for decode a Log file? ").strip().lower()
 
     if action == 'u':
         encoded_url = input("Enter the URL-encoded string: ")
