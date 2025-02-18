@@ -24,7 +24,7 @@ def decode_url(encoded_str):
 
 # Main function to handle user interaction
 def log_decoder():
-    action = input("Press (U) for decode a URL string or Press (L) for decode a Log file? ").strip().lower()
+    action = input("Press (U) for decode a URL string or (L) for decode a Log file? ").strip().lower()
 
     if action == 'u':
         encoded_url = input("Enter the URL-encoded string: ")
@@ -32,8 +32,8 @@ def log_decoder():
         print("Decoded URL:", decoded_url)
 
     elif action == 'l':
-        log_file_path = input("Enter the path of the access log file to decode: ").strip()
-        output_log_path = input("Enter the path where the decoded log file should be saved: ").strip()
+        log_file_path = input("Enter the path of the access log file to decode (dont forget the extension of the file): ").strip()
+        output_log_path = input("Enter the path where the decoded log file should be saved (dont forget the extension of the file): ").strip()
 
         try:
             # Read the log file content
@@ -55,12 +55,12 @@ def log_decoder():
             print(f"Decoded log content saved to {output_log_path}")
 
         except FileNotFoundError:
-            print("The specified log file was not found. Please verify the file path and try again.")
+            print("The specified log file was not found or you didnt define the extension. Please verify the file path and extension and try again.")
         except Exception as error:
             print(f"An error occurred: {error}")
 
     else:
-        print("Invalid input. Please choose either 'U' for URL or 'L' for log file.")
+        print("Invalid input. Please choose either 'U' for URL string or 'L' for log file.")
 
 if __name__ == "__main__":
     log_decoder()
