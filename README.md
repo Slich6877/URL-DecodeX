@@ -21,6 +21,7 @@ Features:
 %29).
 
  • Option to decode both individual URL strings or entire log files.
+
  • The ability to specify a custom filename and path for the decoded output.
 
 Usage:
