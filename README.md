@@ -33,5 +33,7 @@ The decoded result will be saved in the specified output file.
   • Use the path where the file that you want to decode is located when the input asks you:
 
 Example:
-"Enter the path of the access log file to decode (dont forget the extension of the file): C:\xxx\xxx\Test.txt"
-"Enter the path where the decoded log file should be saved (dont forget the extension of the file): C\xxx\xxx\Test_decompiled.txt"
+
+"Enter the path of the access log file to decode (dont forget the extension of the file):" C:\xxx\xxx\Test.txt
+
+"Enter the path where the decoded log file should be saved (dont forget the extension of the file):" C\xxx\xxx\Test_decompiled.txt
