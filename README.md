@@ -8,17 +8,7 @@ Log File Decoder: You can input a path to an access log file, and the script wil
 
 Features:
 
- • Supports decoding of URL-encoded characters(UTF-8,Wins-1252) (such as:
-%20
-%21
-%22
-%23
-%24
-%25
-%26
-%27
-%28
-%29).
+ • Supports decoding of all URL-encoded characters since its now using the urllib.parse which is a submodule of urllib that deals with URL parsing and manipulation.
 
  • Option to decode both individual URL strings or entire log files.
 
